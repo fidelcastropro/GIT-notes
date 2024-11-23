@@ -22,7 +22,26 @@
         <li>To add the files created by the user in the editor to the github clone in our PC Follow the given command <b>git add filename</b></li>
         <li>The command given in the previous line only adds the file to the Repository clone in our PC but not saving it.To save the file in the Repository Clone <b>git commit -m "message"</b></li>
         <li>Now the newly created file will only saved in the repository clone inour PC.</li>
-        <li>To update it in the GitHub Server</li>
+        <li>To update it in the GitHub Server we have to give the command <b>git push origin main</b> Here the <q>main</q> is the directory name in the github Server.</li>
+        <li><b>git add filename</b> - The purpose of the command is not adding the file to the clone repository but adding the each and every updates on the file to the repository clone.</li>
+        <li>So <b>git add filename</b> is used to delete,modify the file in the clone repository.</li>
+        <li>In the previous cases we have seen how to create a file in our PC text editor and update it in the repository clone and pushing it to the GitHub server.This case we are going to create the file in the GitHub server but we have to update the changes made in the server to the clone repository in our PC.</li>
+        <li>To do the process mentioned above <b>git pull</b> command is used.</li>
+        <li>In the above given steps we have added files to the Git Repository by creating a Clone in our PC.Now we are going to learn how to add files to the repository without creating a clone in our PC
+            <ul>
+                <li>From the previous repository we have to navigate to the new location where we are going to create the new files which are to be saved in the github repository <b>cd ..</b> coming one folder back from the previous location.</li>
+                <li><b>cd newFolderName</b> to open that folder</li>
+                <li>In the previous cases we have created the clone so the keyword <q>origin</q> points out the repository url. But in this case we have not created the clone so we have to specify the link of the repository to link that new folder with the Repository <b>git remote add origin repositoryLink</b></li>
+                <li><b>git init</b> - this command initializes that folder to be connected with that repository.</li>
+                <li><b>git add filename</b></li>
+                <li><b>git commit -m "commit message"</b></li>
+                <li><b>in the second repository the directory is named as <q>master</q>,so</b></li>
+                <li><b>git push origin master</b></li>
+                <li><b>git branch -M "desiredFilePathName"</b> - Then the folder is created in the Repository with the name we specified</li>
+                <li><b>git push origin nameOfTheFolderCreatedinRepository</b> - This command is used to store the files in diffrent folders of the GitHub Repository</li>
+                <li>If more than one folders exist in the repository then the command given in the previous line will be useful to store the files in different folders.</li>
+            </ul>
+        </li>
     </ul>
 </body>
 </html>
